@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .hero {
+        height: 80vh;
+        background: url("../assets/bg.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        border: 1px black solid;
+      }
+
+      @media only screen and (max-width: 400px) {
+        .hero {
+          height: 30vh;
+          background: url("../assets/bg.jpeg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          border: 1px black solid;
+        }
+      }
+    </style>
+  </head>
+  <body class="">
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex space-x-7">
+            <div>
+              <!-- Website Logo -->
+              <a href="#" class="flex items-center py-4 px-2">
+                <img
+                  src="../assets/icon.jpeg"
+                  alt="Logo"
+                  class="h-10 w-10 mr-2"
+                />
+                <span class="font-semibold text-gray-500 text-lg">Sekolah</span>
+              </a>
+            </div>
+          </div>
+          <!-- Secondary Navbar items -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a
+              href=""
+              class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold"
+              >Home</a
+            >
+            <a
+              href=""
+              class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+              >Tentang&nbsp;Kami</a
+            >
+            <a
+              href=""
+              class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+              >Program&nbsp;Akademik</a
+            >
+            <a
+              href=""
+              class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+              >Ekstrakurikuler</a
+            >
+            <a
+              href=""
+              class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+              >Kontak</a
+            >
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-gray-500 hover:text-green-500"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li class="active">
+            <a
+              href="index.html"
+              class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+              >Tentang&nbsp;Kami</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+              >Program&nbsp;Akademik</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+              >Ekstrakurikuler</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- awal about -->
+    <!-- Jumbotron -->
+    <div
+      class="relative overflow-hidden bg-cover bg-no-repeat"
+      style="
+        background-position: 50%;
+        background-image: url('../assets/bg.jpeg');
+        height: 500px;
+      "
+    >
+      <div
+        class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.5)] bg-fixed"
+      >
+        <div class="flex h-full items-center justify-center">
+          <div class="px-6 text-center text-white md:px-12">
+            <h1
+              class="mt-2 text-2xl font-bold font-sans tracking-tight md:text-6xl"
+            >
+              Belajar bersama kami dan akselerasi masa depan
+            </h1>
+            <h1
+              class="m-4 mb-10 text-xs font-semibold font-sans tracking-tight md:text-xl md:m-12"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos,dolor sit amet consectetur adipisicing elit.
+              Dignissimos.
+            </h1>
+
+            <div class="flex md:mx-auto">
+              <form class="flex w-full md:w-3/5 md:mx-auto">
+                <input
+                  type="search"
+                  id="default-search"
+                  placeholder="Cari jurusan kamu"
+                  class="rounded-md px-3 py-2 md:px-6 md:py-5 border border-gray-300 text-gray-900 outline-none shadow-lg w-full"
+                  required
+                />
+                <button
+                  type="button"
+                  class="text-white ml-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  search
+                  <svg
+                    class="w-3.5 h-3.5 ml-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+    <!-- akhir about -->
+    <!-- kemitraan  -->
+    <div class="flex gap-4 justify-center mt-6 md:justify-evenly">
+      <div class="flex items-center">
+        <img
+          src="../assets/grab.png"
+          alt="Grab"
+          class="object-contain w-16 h-16 md:w-36 md:h-36"
+        />
+      </div>
+      <div class="flex items-center">
+        <img
+          src="../assets/gojek.png"
+          alt="Gojek"
+          class="object-contain w-16 h-16 md:w-36 md:h-36"
+        />
+      </div>
+      <div class="flex items-center">
+        <img
+          src="../assets/tokopedia.png"
+          alt="Tokopedia"
+          class="object-contain w-16 h-16 md:w-36 md:h-36"
+        />
+      </div>
+      <div class="flex items-center">
+        <img
+          src="../assets/google.png"
+          alt="Traveloka"
+          class="object-contain w-16 h-16 md:w-36 md:h-36"
+        />
+      </div>
+    </div>
+    <!--  akhir kemitraan  -->
+    <div class="programAkademik grid md:grid-cols-2 mt-10">
+      <div class="Exprience md:w-1/2">
+        <h1 class="font-bold text-2xl font-sans text-center">
+          Find Out More About us learning Exprience
+        </h1>
+        <p class="font-bold text-xs font-sans text-center mt-3 p-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+          quibusdam eligendi dolore magni expedita inventore ipsam aliquid cum.
+        </p>
+        <div class="w-full">
+        
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
