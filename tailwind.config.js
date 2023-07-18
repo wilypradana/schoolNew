@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Noto Sans", "sans-serif"],
+      popins: ["Poppins", "sans-serif"],
     },
     extend: {
       colors: {
