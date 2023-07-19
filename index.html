@@ -112,7 +112,7 @@
               >Tentang&nbsp;Kami</a
             >
             <a
-              href="#akademik"
+              href="#programAkademik"
               class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
               >Program&nbsp;Akademik</a
             >
@@ -218,16 +218,21 @@
         <div class="flex h-full items-center justify-center">
           <div class="px-6 text-center text-white md:px-12">
             <h1
-              class="mt-2 text-2xl font-bold font-sans tracking-tight md:text-6xl"
+              class="mt-2 text-2xl font-bold font-sans tracking-tight md:text-6xl uppercase"
             >
               Belajar bersama kami dan akselerasi masa depan
             </h1>
             <h1
-              class="m-4 mb-10 text-xs font-semibold font-sans tracking-tight md:text-xl md:m-12"
+              class="m-4 mb-10 text-xs font-semibold font-sans tracking-tight md:text-md md:m-12"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos,dolor sit amet consectetur adipisicing elit.
-              Dignissimos.
+              SMK adalah sekolah yang bertujuan untuk mempersiapkan siswa dengan
+              keterampilan dan pengetahuan yang mereka butuhkan untuk sukses di
+              dunia kerja. Dalam SMK, siswa memiliki kesempatan untuk
+              mempelajari berbagai program kejuruan yang relevan dengan
+              industri, seperti teknologi informasi, rekayasa, dan bisnis.
+              Selain itu, dengan fokus pada pendidikan kejuruan, SMK dapat
+              membantu siswa untuk mencapai tujuan karir mereka dengan lebih
+              cepat dan efektif.
             </h1>
 
             <div class="flex md:mx-auto">
@@ -236,9 +241,49 @@
                   type="search"
                   id="default-search"
                   placeholder="Cari jurusan kamu"
+                  id="jurusanDefaultButton"
+                  data-dropdown-toggle="dropdownJurusan"
                   class="rounded-md px-3 py-2 md:px-6 md:py-5 border border-gray-300 text-gray-900 outline-none shadow-lg w-full"
                   required
                 />
+                <div
+                  id="dropdownJurusan"
+                  class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full mt-2"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                    aria-labelledby="jurusanDefaultButton"
+                  >
+                    <li>
+                      <a
+                        href="https://articlemuliabuana.site/2023/07/18/panduan-dasar-mengenai-topologi-jaringan-dan-penerapannya-dalam-lingkungan-komputer/"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Teknik Komputer jaringan</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://articlemuliabuana.site/2023/07/18/mengenal-pajak-dan-perpajakan-pentingnya-memahami-sistem-pajak-dalam-konteks-keuangan-negara/"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Teknik audio video
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Akuntasi
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://articlemuliabuana.site/2023/07/18/etika-bisnis-dan-profesional-membangun-integritas-dan-keberlanjutan-dalam-dunia-usaha/"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Otkp
+                      </a>
+                    </li>
+                  </ul>
+                </div>
                 <button
                   type="button"
                   class="text-white ml-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -302,17 +347,19 @@
     </div>
 
     <!--  akhir kemitraan  -->
-    <div class="programAkademik grid md:grid-cols-2 mt-10">
+    <div class="programAkademik grid md:grid-cols-2 mt-10" id="programAkademik">
       <!-- Bagian kiri -->
       <div class="Exprience md:pr-4">
         <h1 class="font-bold text-2xl font-sans text-center md:text-4xl">
-          Find Out More About our Learning Experience
+          Kegiatan praktek tiap jurusan
         </h1>
         <p
           class="font-bold text-xs font-sans text-center mt-3 p-3 md:text-md italic"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-          quibusdam eligendi dolore magni expedita inventore ipsam aliquid cum.
+          menawarkan program kejuruan yang relevan dengan dunia kerja. Salah
+          satu keunggulan SMK adalah kegiatan praktek tiap jurusan yang membantu
+          siswa mengembangkan keterampilan praktis di bawah pengawasan guru dan
+          tenaga ahli di bidang tersebut
         </p>
         <div class="w-full md:w-1/2 mx-auto">
           <div id="default-carousel" class="relative" data-carousel="slide">
@@ -460,7 +507,7 @@
         <h1
           class="font-bold text-2xl font-sans text-center md:text-4xl md:mb-4"
         >
-          Our Popular Courses
+          Jurusan yang Mempersiapkan Masa Depan
         </h1>
         <div
           class="md:flex md:justify-center mt-10 md:mx-auto grid grid-cols-2 gap-2"
@@ -469,12 +516,16 @@
             <div
               class="w-40 bg-green-400 border border-gray-200 rounded-lg shadow"
             >
-              <img src="/assets/icon/work.png" alt="" class="ps-3 w-12 h-12" />
+              <img
+                src="/assets/icon/work.png"
+                alt=""
+                class="ps-3 w-12 h-12 md:mt-2"
+              />
               <h1 class="text-xs text-white font-bold font-sans ps-2 pt-2">
-                Learn With Experts
+                OTKP
               </h1>
               <p class="text-xs text-white font-sans ps-2 py-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat?
+                Menguasai Keterampilan Kantor dan Teknologi Informasi
               </p>
             </div>
           </div>
@@ -482,10 +533,10 @@
             <div class="w-40 border border-gray-200 rounded-lg shadow">
               <img src="/assets/icon/bank.png" alt="" class="ps-3 w-12 h-12" />
               <h1 class="text-xs text font-bold font-sans ps-2 pt-2">
-                Learn With Experts
+                Akuntasi
               </h1>
               <p class="text-xs text font-sans ps-2 py-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat?
+                Membangun Karir di Bidang Pengelolaan Keuangan
               </p>
             </div>
           </div>
@@ -496,22 +547,18 @@
                 alt=""
                 class="ps-3 w-12 h-12"
               />
-              <h1 class="text-xs text font-bold font-sans ps-2 pt-2">
-                Learn With Experts
-              </h1>
+              <h1 class="text-xs text font-bold font-sans ps-2 pt-2">TKJ</h1>
               <p class="text-xs text font-sans ps-2 py-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat?
+                Siap Berkarir di Bidang Teknik Komputer dan Jaringan
               </p>
             </div>
           </div>
           <div class="w-full md:w-1/2">
             <div class="w-40 border border-gray-200 rounded-lg shadow">
               <img src="/assets/icon/tv.png" alt="" class="ps-3 w-12 h-12" />
-              <h1 class="text-xs text font-bold font-sans ps-2 pt-2">
-                Learn With Experts
-              </h1>
+              <h1 class="text-xs text font-bold font-sans ps-2 pt-2">TAV</h1>
               <p class="text-xs text font-sans ps-2 py-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat?
+                Mewujudkan Passion di Bidang Produksi Audio Video
               </p>
             </div>
           </div>
@@ -649,8 +696,7 @@
             </div>
           </a>
           <p class="mb-5 font-normal text-gray-700 mt-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo eaque
-            quae delectus, nesciunt blanditiis libero?
+            Tangkas di Lapangan, Juara di Hati dengan Ekskul Futsal
           </p>
           <div class="flex items-center gap-2">
             <a
@@ -693,8 +739,7 @@
             </div>
           </a>
           <p class="mb-5 font-normal text-gray-700 mt-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo eaque
-            quae delectus, nesciunt blanditiis libero?
+            Menampilkan Bakat, Menginspirasi Orang dengan Ekskul Theater
           </p>
           <div class="flex items-center gap-2">
             <a
@@ -737,8 +782,7 @@
             </div>
           </a>
           <p class="mb-5 font-normal text-gray-700 mt-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo eaque
-            quae delectus, nesciunt blanditiis libero?
+            Bergairah, Memeriahkan Suasana dengan Ekskul Cheerleader
           </p>
           <div class="flex items-center gap-2">
             <a
@@ -781,8 +825,7 @@
             </div>
           </a>
           <p class="mb-5 font-normal text-gray-700 mt-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo eaque
-            quae delectus, nesciunt blanditiis libero?
+            Siap Siaga, Siap Bantu dengan Ekskul Palang Merah Remaja
           </p>
           <div class="flex items-center gap-2">
             <a
@@ -825,8 +868,7 @@
             </div>
           </a>
           <p class="mb-5 font-normal text-gray-700 mt-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo eaque
-            quae delectus, nesciunt blanditiis libero?
+            Bertahan, Berprestasi, Bersama Ekskul Volleyball
           </p>
           <div class="flex items-center gap-2">
             <a
@@ -869,8 +911,7 @@
             </div>
           </a>
           <p class="mb-5 font-normal text-gray-700 mt-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo eaque
-            quae delectus, nesciunt blanditiis libero?
+            Menjadi Lebih Baik, Memimpin dengan Ekskul Pramuka
           </p>
           <div class="flex items-center gap-2">
             <a
@@ -913,8 +954,7 @@
             </div>
           </a>
           <p class="mb-5 font-normal text-gray-700 mt-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo eaque
-            quae delectus, nesciunt blanditiis libero?
+            Tradisi, Kreativitas, dan Kebersamaan dengan Ekskul Marawis
           </p>
           <div class="flex items-center gap-2">
             <a
@@ -957,8 +997,7 @@
             </div>
           </a>
           <p class="mb-5 font-normal text-gray-700 mt-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo eaque
-            quae delectus, nesciunt blanditiis libero?
+            Kibarkan Bendera, Wujudkan Kedisiplinan dengan Ekskul Paskibra
           </p>
           <div class="flex items-center gap-2">
             <a
@@ -1001,8 +1040,7 @@
             </div>
           </a>
           <p class="mb-5 font-normal text-gray-700 mt-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo eaque
-            quae delectus, nesciunt blanditiis libero?
+            Belajar Ilmu Bela Diri, Tingkatkan Kepribadian dengan Ekskul PSHT
           </p>
           <div class="flex items-center gap-2">
             <a
@@ -1041,7 +1079,16 @@
         />
       </svg>
       <span class="sr-only">Info</span>
-      <div>Kami menyediakan artikel pendukung yang berkualitas</div>
+      <div>
+        Kami menyediakan artikel pendukung yang berkualitas
+        <a
+          href="https://articlemuliabuana.site"
+          class="text-violet-500 underline"
+          target="_blank"
+        >
+          baca disini</a
+        >
+      </div>
     </div>
     <div class="md:grid mx-auto md:grid-cols-4">
       <a
@@ -1070,33 +1117,28 @@
           >
         </div>
       </a>
-
       <a
-        href="https://articlemuliabuana.site/2023/07/18/tips-excel/"
-        class="rounded overflow-hidden shadow-lg w-4/5 mx-auto mt-5"
+        href="https://articlemuliabuana.site/2023/07/18/tips-excel"
+        class="rounded overflow-hidden shadow-lg w-4/5 mx-auto"
       >
         <img class="w-full" src="/assets/articles/excel.jpeg" alt="Mountain" />
         <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">
-            excel
-            <p class="text-gray-700 text-base">
-              tips excel dan rumus agar tidak input satu satu
-            </p>
-          </div>
-          <div class="pt-4 pb-2">
-            <span
-              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-              >#Excel</span
-            >
-            <span
-              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-              >#Akuntasi</span
-            >
-            <span
-              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-              >#Rumus</span
-            >
-          </div>
+          <div class="font-bold text-xl mb-2">Tips Excel</div>
+          <p class="text-gray-700 text-base">Belajar excel mudah dan cepat</p>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#excel</span
+          >
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#office</span
+          >
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >#rumus</span
+          >
         </div>
       </a>
     </div>
@@ -1106,7 +1148,7 @@
 
     <dh-component id="pembelajaranTambahan">
       <div
-        class="flex items-center w-1/2 p-2 mb-4 text-sm rounded-lg mx-auto bg-blue-500 text-white"
+        class="flex items-center w-1/2 p-2 mb-4 text-sm rounded-lg mx-auto md:mt-6 bg-blue-500 text-white"
         role="alert"
       >
         <svg
@@ -1723,9 +1765,15 @@
               <div>
                 <h2 class="text-2xl font-bold text-gray-900">Smk pasti bisa</h2>
 
-                <p class="mt-4 text-gray-500">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
-                  non cupiditate quae nam molestias.
+                <p class="mt-4 text-gray-500 text-sm">
+                  SMK adalah sekolah yang bertujuan untuk mempersiapkan siswa
+                  dengan keterampilan dan pengetahuan yang mereka butuhkan untuk
+                  sukses di dunia kerja. Dalam SMK, siswa memiliki kesempatan
+                  untuk mempelajari berbagai program kejuruan yang relevan
+                  dengan industri, seperti teknologi informasi, rekayasa, dan
+                  bisnis. Selain itu, dengan fokus pada pendidikan kejuruan, SMK
+                  dapat membantu siswa untuk mencapai tujuan karir mereka dengan
+                  lebih cepat dan efektif.
                 </p>
               </div>
             </div>
