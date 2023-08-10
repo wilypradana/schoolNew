@@ -18,70 +18,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css"
-      rel="stylesheet"
-    />
-
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      .hero {
-        height: 80vh;
-        background: url("/assets/bg.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        border: 1px black solid;
-      }
-      .-z-1 {
-        z-index: -1;
-      }
-
-      .origin-0 {
-        transform-origin: 0%;
-      }
-
-      input:focus ~ label,
-      input:not(:placeholder-shown) ~ label,
-      textarea:focus ~ label,
-      textarea:not(:placeholder-shown) ~ label,
-      select:focus ~ label,
-      select:not([value=""]):valid ~ label {
-        /* @apply transform; scale-75; -translate-y-6; */
-        --tw-translate-x: 0;
-        --tw-translate-y: 0;
-        --tw-rotate: 0;
-        --tw-skew-x: 0;
-        --tw-skew-y: 0;
-        transform: translateX(var(--tw-translate-x))
-          translateY(var(--tw-translate-y)) rotate(var(--tw-rotate))
-          skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-          scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-        --tw-scale-x: 0.75;
-        --tw-scale-y: 0.75;
-        --tw-translate-y: -1.5rem;
-      }
-
-      input:focus ~ label,
-      select:focus ~ label {
-        /* @apply text-black; left-0; */
-        --tw-text-opacity: 1;
-        color: rgba(0, 0, 0, var(--tw-text-opacity));
-        left: 0px;
-      }
-      @media only screen and (max-width: 400px) {
-        .hero {
-          height: 30vh;
-          background: url("/assets/bg.jpeg");
-          background-repeat: no-repeat;
-          background-size: cover;
-          width: 100%;
-          border: 1px black solid;
-        }
-      }
-    </style>
   </head>
   <body class="font-popins">
     <nav class="bg-white shadow-lg">
@@ -1148,7 +1084,7 @@
 
     <dh-component id="pembelajaranTambahan">
       <div
-        class="flex items-center w-1/2 p-2 mb-4 text-sm rounded-lg mx-auto md:mt-6 bg-blue-500 text-white"
+        class="flex items-center md:w-1/2 w-5/6 p-2 mb-4 text-sm rounded-lg mx-auto md:mt-6 bg-blue-500 text-white"
         role="alert"
       >
         <svg
@@ -1165,6 +1101,11 @@
         <span class="sr-only">Info</span>
         <div>
           Kami Akan melaunching program ini pada tanggal 20 agustus 2023 !!!!!
+          <a
+            href="https://wisehive.smakmb.sch.id"
+            class="underlinem font-popins text-xl font-bold text-red-600"
+            >Daftar</a
+          >
         </div>
       </div>
       <div class="container flex justify-center mx-auto pt-16">
